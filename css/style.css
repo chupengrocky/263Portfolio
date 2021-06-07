@@ -142,6 +142,11 @@ hr {
 
 #f img {
   text-align: center;
+  background-size:padding;
+  width: 800px;
+  height: 611px;
+ 
+
 }
 
 /* MENU CONF*/
