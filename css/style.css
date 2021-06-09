@@ -4,7 +4,7 @@
 * Author: TemplateMag.com
 * License: https://templatemag.com/license/
 */
-
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700|EB+Garamond");
 body {
   background-color: #f2f2f2;
   font-family: 'EB Garamond', serif;
@@ -78,7 +78,7 @@ hr {
   margin-top: -10px;
   padding-top: 20px;
   text-align: center;
-  background-attachment: relative;
+  background-attachment: scroll;
   background-position: center center;
   min-height: 700px;
   width: 100%;
@@ -115,38 +115,51 @@ hr {
 
 /* Footer Wrap */
 
-#f {
+.f {
   background: #1a1a1a;
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: center
 }
 
-#f h3 {
+.f h3 {
   color: white;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-#f i {
+.f i {
   font-size: 8px;
   color: #fff;
   padding: 3px;
 }
 
-#f p {
+.f p {
   font-size: 20px;
   color: #f2f2f2;
 }
 
-#f img {
+.f img {
   text-align: center;
-  background-size:padding;
-  width: 800px;
-  height: 611px;
+  background-size: contain;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto
+  /* height: 600px; */
  
 
+}
+
+.f .content {
+  background-color: #f0f8ff;
+}
+.f .header {
+  background-color: #deb887;
+}
+
+.f td{
+  text-align: left;
 }
 
 /* MENU CONF*/

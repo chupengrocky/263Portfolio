@@ -12,7 +12,7 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700|EB+Garamond" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700|EB+Garamond" rel="stylesheet"> -->
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,6 @@
       <a href="#about" class="smoothscroll">About</a>
       <a href="#persona" class="smoothscroll">Persona</a>
       <a href="#portfolio" class="smoothscroll">Portfolio</a>
-      <a href="#contact" class="smoothscroll">Contact</a>
       <a href="#user_evaluation" class="smoothscroll">User evaluation</a>
       <a href="#heuristic_evaluation" class="smoothscroll">Heuristic evaluation</a>
       <a href="#"><i class="fa fa-facebook"></i></a>
@@ -56,11 +55,11 @@
   </nav>
 
   <!-- ========== HEADER SECTION ========== -->
-  <section id="home" name="home"></section>
+  <section id="home"></section>
   <div id="headerwrap">
     <div class="container">
       <div class="logo">
-        <img src="img/logo.png">
+        <img src="img/logo.png" alt="">
       </div>
       <br>
       <div class="row">
@@ -79,8 +78,8 @@
   <!-- /headerwrap -->
 
   <!-- ========== ABOUT SECTION ========== -->
-  <section id="about" name="about"></section>
-  <div id="f">
+  <section id="about" ></section>
+  <div class="f">
     <div class="container">
       <div class="row">
         <h3>ABOUT US</h3>
@@ -102,8 +101,8 @@
 
   <!-- ========== CAROUSEL SECTION ========== -->
 <!--  Understanding of your users and your personas-->
-  <section id="persona" name="persona"></section>
-  <div id="f">
+  <section id="persona" ></section>
+  <div class="f">
     <div class="container">
       <div class="row">
         <h3>TARGET USERS</h3>
@@ -160,12 +159,12 @@
   </div>
   <!-- f -->
 
-  <!-- ========== CAROUSEL SECTION ========== -->
-  <section id="portfolio" name="portfolio"></section>
-  <div id="f">
+  <!-- ========== Prototype SECTION ========== -->
+  <section id="portfolio"></section>
+  <div class="f">
     <div class="container">
       <div class="row centered">
-        <h3>SOME PROJECTS</h3>
+        <h3>High Fiderlity Prototype</h3>
         <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 
         <div class="col-lg-6 col-lg-offset-3">
@@ -173,13 +172,25 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active centered">
-                <img class="img-responsive" src="img/c1.png" alt="">
+                <img class="img-responsive" src="img/figprototype1.png" alt="">
               </div>
               <div class="item centered">
-                <img class="img-responsive" src="img/c3.png" alt="">
+                <img class="img-responsive" src="img/figprototype2.png" alt="">
               </div>
               <div class="item centered">
-                <img class="img-responsive" src="img/c3.png" alt="">
+                <img class="img-responsive" src="img/figprototype3.png" alt="">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="img/figprototype4.png" alt="">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="img/figprototype5.png" alt="">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="img/figprototype6.png" alt="">
+              </div>
+              <div class="item centered">
+                <img class="img-responsive" src="img/figprototype7.png" alt="">
               </div>
             </div>
             <br>
@@ -188,6 +199,9 @@
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="5"></li>
             </ol>
           </div>
         </div>
@@ -199,72 +213,18 @@
   </div>
   <!-- f -->
 
-  <!-- ========== CONTACT SECTION ========== -->
-  <section id="contact" name="contact"></section>
-  <div id="f">
-    <div class="container">
-      <div class="row">
-        <h3>CONTACT US</h3>
-        <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p>Some Avenue, 987<br/>Madrid, Spain<br/>+34 8984-4343</p>
-          <p>iam@awesomemail.com</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-            <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-email">Your Email</label>
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-subject">Subject</label>
-              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-              <div class="validate"></div>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message">Your Message</label>
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-              <div class="validate"></div>
-            </div>
-
-            <div class="loading"></div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <div class="form-send">
-              <button type="submit" class="btn btn-large">Send Message</button>
-            </div>
-
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
   <!-- USER EVALUATION -->
-  <section id="user_evaluation" name="user_evaluation"></section>
-  <div id="f">
+  <section id="user_evaluation" ></section>
+  <div class="f">
     <div class="container">
       <h3>USER EVALUATION</h3>
-      <table class="table-responsive" bgcolor="#f0f8ff">
+      <table class="table" >
         <caption>USER EVALUATION</caption>
         <thead>
-        <tr bgcolor="#deb887" >
+        <tr class="header" >
           <th>Issue</th>
           <th>Evidence</th>
           <th>Solution</th>
@@ -272,49 +232,49 @@
         </tr>
         </thead>
         <tbody>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>Cannot filter product by conditioning the item page</td>
           <td>All participants are interested in clicking the Filter button but the Filter button does not redirect to any other pages or popped windows.</td>
           <td>Need to implement filter feature</td>
           <td>2</td>
         </tr>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>Users cannot see what they have order </td>
           <td>User would like to see a page containing the item they have already bought </td>
           <td>Need order status in profile</td>
           <td>1</td>
         </tr>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>Community page’s name does not clearly show its functionality</td>
           <td>Participants think the Community Page is a group chat or a “community” for people to know each other. Actually we plan to let user see whether there are seller or buyer nearby</td>
           <td>Change the community page to “Nearby page” </td>
           <td>1</td>
         </tr>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>Currently there is no actual price listing for the items so customers can’t tell how much it costs</td>
           <td>Users were confused at a blatant lack of an explicit price tag</td>
           <td>Need to add price to items</td>
           <td>1</td>
         </tr>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>Users may not know how to return from the confirmation page</td>
           <td>After participants finally buy items from the app, they can not find the button to go back to the home page. They are stuck in the checkout page.</td>
           <td>Add an obvious return home button to confirmation page</td>
           <td>2</td>
         </tr>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>In the report page, there is no place to upload a picture</td>
           <td>Participants want to add pictures when they report an item but they can't find a place to upload pictures.</td>
           <td>Add upload pic in the addition info section</td>
           <td>2</td>
         </tr>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>Back button in chat box page is kind misleading</td>
           <td>When participants click the back button on the chat box page they seem to expect to go back to the item page rather than the chat list page.</td>
           <td>Chat box should have a button to return the item detail page</td>
           <td>1</td>
         </tr>
-        <tr bgcolor="#f0f8ff">
+        <tr class="content">
           <td>There is no way to see at a glance what condition the items are in aside from photos, which can be small and hard to see</td>
           <td>Users suggested having a dedicated condition section as part of the item page</td>
           <td>Add condition of item to item details</td>
@@ -326,8 +286,8 @@
   </div>
 
 <!--  heuristic evaluation-->
-  <section id="heuristic_evaluation" name="heuristic_evaluation"></section>
-  <div id="f">
+  <section id="heuristic_evaluation"></section>
+  <div class="f">
     <div class="container">
       <div class="row">
         <h3>HEURISTIC EVALUATION</h3>
@@ -341,7 +301,7 @@
     </div>
   </div>
 
-
+  
   <div id="copyrights">
     <div class="container">
       <p>
